@@ -1,0 +1,63 @@
+{
+  "name": "nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,md}\""
+  },
+  "dependencies": {
+    "@d-id/client-sdk": "^1.1.11",
+    "@heygen/streaming-avatar": "^2.1.0",
+    "@hookform/resolvers": "^5.2.2",
+    "@nextui-org/react": "^2.6.11",
+    "@react-three/drei": "^10.7.6",
+    "@react-three/fiber": "^9.4.0",
+    "@sendgrid/mail": "^8.1.6",
+    "bootstrap": "^5.3.8",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "firebase": "^12.2.1",
+    "firebase-admin": "^13.5.0",
+    "groq-sdk": "^0.32.0",
+    "lucide-react": "^0.544.0",
+    "next": "15.5.3",
+    "radix-ui": "^1.4.3",
+    "react": "19.1.0",
+    "react-bootstrap-icons": "^1.11.6",
+    "react-dom": "19.1.0",
+    "react-firebase-hooks": "^5.1.1",
+    "react-hook-form": "^7.66.0",
+    "react-icons": "^5.5.0",
+    "react-markdown": "^10.1.0",
+    "tailwind-merge": "^3.3.1",
+    "three": "^0.181.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/three": "^0.181.0",
+    "@typescript-eslint/eslint-plugin": "^8.43.0",
+    "@typescript-eslint/parser": "^8.43.0",
+    "eslint": "^9.35.0",
+    "eslint-config-next": "^15.5.3",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "typescript-eslint": "^8.43.0"
+  }
+}

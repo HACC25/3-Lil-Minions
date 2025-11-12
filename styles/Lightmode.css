@@ -1,0 +1,158 @@
+/* Light mode styles */
+.light-mode body {
+  background-color: white;
+  color: #121212;
+}
+
+.light-mode main {
+  background-color: rgba(229, 242, 255, 0.81);
+}
+
+.light-mode .navbar {
+  background-color: #eaeaff66;
+  color: #121212;
+}
+
+.light-mode .custom-navbar a {
+  color: #000000; /* Link color for light mode */
+}
+
+.light-mode .custom-navbar a:hover {
+  color: #787dfff1;
+}
+
+.light-mode .darkmode-icon {
+  color: #000000; /* Icon color for dark mode toggle */
+}
+
+.light-mode .darkmode-icon:hover {
+  color: #787dfff1;
+}
+
+.light-mode .HomeImageCt {
+  background-color: #f3f4fa;
+}
+
+.light-mode .custom-h1 {
+  color: #000000;
+}
+
+.light-mode .btn-primary {
+  background-color: #449fff;
+  border-color: #449fff;
+  color: #ffffff;
+}
+
+.light-mode .blue-text {
+  color: #0080ff;
+}
+
+.light-mode .IntroDiv {
+  background-color: #ffffff;
+}
+
+.light-mode .IntroBox {
+  /* Gradient border effect */
+  background: #eaeaff66;
+  border: 3px solid transparent; /* Transparent border for spacing */
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #3f51b5; /* Text color for contrast */
+}
+
+.light-mode .card-shadow:hover {
+  box-shadow: 0 8px 15px -3px rgb(255, 255, 255);
+}
+
+.light-mode .circular-categories-container {
+  background-color: #ffffff;
+  color: #78a5ff;
+}
+
+.light-mode .category-box {
+  background-color: #3f51b5; /* New color gradient */
+  color: #ffffff;
+}
+
+.light-mode .category-box.centered:hover {
+  background-color: #3f51b5;
+}
+
+.light-mode .HowItWorksDiv {
+  background-color: rgb(
+    255,
+    255,
+    255
+  ); /* Apply background to the entire section */
+}
+
+.light-mode .custom-h4 {
+  color: #000000;
+}
+
+.light-mode .StepBox {
+  background-color: #3f51b5; /* background */
+  color: rgb(121, 186, 255); /* text */
+  border: 3px solid #3f51b5;
+  box-shadow:
+    0 4px 10px #3f51b5,
+    /* Main shadow for depth */ inset 0 0 8px rgba(126, 193, 255, 0.3),
+    /* Soft inner glow */ inset 0 0 15px rgba(126, 193, 255, 0.4); /* Enhanced inner glow */
+}
+
+.light-mode .StepNumber {
+  background: linear-gradient(40deg, rgb(252, 252, 252), #3f51b5);
+}
+
+.light-mode .StepText {
+  color: white;
+}
+
+.light-mode .FullPageBackground {
+  background-color: rgb(255, 255, 255);
+}
+
+.light-mode .LargeBox {
+  background: radial-gradient(circle, #3f51b5 3%, #ffffff 50%);
+  color: #3f51b5;
+}
+
+.light-mode .smallBoxText {
+  color: #3f51b5; /* Text color */
+  background: linear-gradient(
+    to bottom left,
+    #3f51b5 3%,
+    #ffffff 60%,
+    #ffffff 100%
+  ); /* Light background color */
+}
+
+.light-mode .MediumBox-left {
+  border: 3px solid #3f51b5;
+  background-color: white;
+  color: #3f51b5;
+}
+
+.light-mode .MediumBox-right {
+  width: 49%; /* Equal width for both bottom boxes */
+  border: 3px solid #3f51b5;
+  background-color: white;
+  color: #3f51b5;
+}
+
+.light-mode .MediumBox-left .bar-1 {
+  background: linear-gradient(180deg, #3f51b5, #7fb6ffbf);
+}
+.light-mode .MediumBox-left .bar-2 {
+  background: linear-gradient(180deg, #3f51b5, #7fb6ffbf);
+}
+.light-mode .MediumBox-left .bar-3 {
+  background: linear-gradient(180deg, #3f51b5, #7fb6ffbf);
+}
+
+.light-mode footer {
+  color: #ffffff;
+  background-color: white;
+}

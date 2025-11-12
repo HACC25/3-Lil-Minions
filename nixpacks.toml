@@ -1,0 +1,12 @@
+[phases.setup]
+nixPkgs = ["nodejs_22", "bun"]
+nixLibs = ["gcc-unwrapped", "libuuid", "libGL"]
+
+[phases.install]
+cmds = ["npm ci"]
+
+[phases.build]
+cmds = ["bun run build"]
+
+[start]
+cmd = "bun run start"

@@ -1,0 +1,270 @@
+.file-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.file-card-border {
+  background: linear-gradient(45deg, #5c7bc3a7, rgba(45, 69, 190, 0.663));
+  padding: 8px; /* Add some padding to create space around the card */
+  display: flex;
+  border-radius: 15px;
+  justify-content: center; /* Center the card horizontally */
+  align-items: center; /* Center the card vertically */
+  height: 430px; /* Match the height of .file-card with padding */
+  max-width: 320px; /* Match the width of .file-card with padding */
+  box-sizing: border-box;
+}
+
+.file-card-border:hover {
+  cursor: pointer;
+  transform: translateY(-15px);
+  box-shadow:
+    0 8px 20px rgba(37, 102, 252, 0.15),
+    0 4px 8px rgba(37, 102, 252, 0.1);
+}
+
+.file-card {
+  background: linear-gradient(45deg, #2566fca7, rgba(116, 193, 245, 0.663));
+  border-radius: 15px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 1;
+}
+
+.file-card:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(0.98);
+  box-shadow:
+    0 8px 20px rgba(37, 102, 252, 0.15),
+    0 4px 8px rgba(37, 102, 252, 0.1);
+}
+
+.file-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.file-card:hover::before {
+  left: 100%;
+}
+
+.file-card:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 4px 8px rgba(37, 102, 252, 0.1);
+}
+
+/* Keep the border styles separate */
+.file-card-border {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.file-card-border:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .file-list {
+    padding: 40px;
+    gap: 32px; /* Increase the gap on larger screens for consistent spacing */
+  }
+}
+
+@media (max-width: 550px) {
+  .file-list {
+    gap: 16px; /* Reduce gap slightly for smaller screens */
+    padding: 20px; /* Padding for smaller screens */
+  }
+  .sort-options-container {
+    display: grid;
+    flex-direction: column;
+    padding: 50px;
+  }
+  .search-bar-container {
+    padding: 15px;
+  }
+}
+
+.cardbox {
+  height: 50%;
+  overflow: hidden !important;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  border-bottom: 1px solid black;
+}
+
+.file-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 65%;
+  overflow: hidden;
+  color: black;
+}
+
+.file-name {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: black;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  font-family: monospace !important;
+  overflow: hidden;
+}
+
+.file-category {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  color: black;
+  font-family: monospace !important;
+}
+
+.file-tags.pt-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: lightgray;
+  font-family: monospace !important;
+}
+
+.file-tag {
+  background-color: #f5f5f5;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: black;
+  font-family: monospace !important;
+}
+
+.views-display {
+  position: static;
+  text-align: center;
+  padding: 8px 0;
+  margin-top: auto;
+  color: black;
+  font-family: monospace !important;
+}
+
+.views-display p {
+  margin: 0;
+  font-size: 14px;
+  color: black;
+  font-family: monospace !important;
+}
+
+.button-container {
+  position: static;
+  padding: 16px 16px 40px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  height: 40px;
+  color: black;
+}
+
+.download-button {
+  background-color: white;
+  color: black;
+  padding: 0;
+  border-radius: 8px;
+  border: none;
+  flex-grow: 1;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: monospace !important;
+}
+
+.download-button:hover {
+  background-color: #e4e4e4;
+}
+
+.bookmark-icon-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.bookmark-icon-button:hover {
+  background-color: #f5f5f5;
+}
+
+.categoryFilterNav {
+  background-color: transparent !important;
+}
+.sort-options-container {
+  display: flex;
+  width: 100%;
+  height: 80px;
+}
+
+.search-bar-container {
+  flex-grow: 1;
+  display: flex;
+}
+
+.sort-options {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.categorySortButton {
+  background-color: white;
+  color: black;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5); /* Inner shadow */
+  font-family: monospace !important;
+}
