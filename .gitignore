@@ -51,4 +51,6 @@ next-env.d.ts
 key.json
 
 backend/__pycache__
+backend/venv/
+agent-creation/venv/
 __pycache__
